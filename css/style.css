@@ -1,0 +1,81 @@
+/*add resets*/
+* {
+    /*fixed size based on fixed height/width as opposed to content box (deafult) */
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    /* adding this so we can see gray border */
+    margin: 5px;
+    flex-direction: column;
+    /*viewport height units- want body to span the entire height of the device, % are relative to parent. Saves time so don't have to do 100% on prent*/
+    min-height: 100vh;
+    border: 5px solid gray;
+    /*center items on page- body is flexbox*/
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    /* border: 3px dotted red; -used to edit */
+    width: 30%;
+  }
+  
+  h1 {
+    /*use digital color meter to get color code for anything mouse over */
+    background-color: #94c47e;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li,
+  li span {
+    font-family: Helvetica;
+  }
+  
+  /* words in list */
+  li {
+    margin: 30px 0 30px 0;
+    color: rgb(241, 170, 76);
+  }
+  
+  /* checkbox in list item -span */
+  li span {
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    background-color: red;
+    padding: 5px;
+  }
+  
+  /* adding green border to input and button */
+  input,
+  button {
+    border: 3px solid #94c47e;
+    height: 40px;
+  }
+  
+  input {
+    /* width is relative to the parent */
+    width: 75%;
+  }
+  
+  /* add skill button styles */
+  button {
+    background-color: #fff;
+    color: #94c47e;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* rel to parent... input takes up 75% and border will take up 1px*/
+    width: 24%;
+  }
+  
